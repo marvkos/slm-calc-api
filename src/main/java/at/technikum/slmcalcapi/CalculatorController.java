@@ -7,6 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CalculatorController {
 
+    /**
+     * Add two integers.
+     *
+     * @param a first integer
+     * @param b second integer
+     */
     @RequestMapping("/calc/sum")
     public int sum(
             @RequestParam int a,
