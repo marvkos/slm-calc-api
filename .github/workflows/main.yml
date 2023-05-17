@@ -23,8 +23,8 @@ jobs:
       run: mvn -B verify --file pom.xml
 
     - run: mkdir download && cp target/*.jar download
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v3
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3
       with:
         # Artifact name
         name: Build
