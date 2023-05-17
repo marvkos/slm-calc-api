@@ -36,9 +36,4 @@ class CalculatorControllerTest {
 
         assertEquals(4, calculatorController.sum(-2, 6));
     }
-
-    @Test
-    void willFail() {
-        assertTrue(false);
-    }
 }
