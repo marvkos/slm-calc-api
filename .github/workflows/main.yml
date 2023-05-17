@@ -22,10 +22,11 @@ jobs:
     - name: Build with Maven
       run: mvn -B verify --file pom.xml
 
+    - run: mkdir download && cp target/*.jar download
     - name: Download a Build Artifact
-      uses: actions/download-artifact@v2.1.1
+      uses: actions/download-artifact@v3
       with:
         # Artifact name
-        name: jar
+        name: Build
         # Destination path
-        path: target/*.jar
+        path: download
